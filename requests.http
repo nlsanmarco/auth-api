@@ -1,0 +1,26 @@
+### Users create (signup)
+  POST http://localhost:3000/users
+  Content-Type: application/json
+
+  {
+    "name": "Polly",
+    "email": "polly@gmail.com",
+    "password": "password",
+    "password_confirmation": "password"
+  }
+
+
+### Sessions create (login)
+  POST http://localhost:3000/sessions
+  Content-Type: application/json
+
+  {
+    "email": "minnie@gmail.com",
+    "password": "password"
+  }
+
+### Users show
+
+  GET http://localhost:3000/users/1
+  Content-Type: application/json
+  Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzEzOTgwMzZ9.omOECMe_YMtrt7t0LjGnovOmuEed1AX4-0TpQX6JZcI
